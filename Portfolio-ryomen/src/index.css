@@ -1,0 +1,30 @@
+:root {
+  --mainTextColor: rgba(255, 255, 255, 0.87);
+  --buttonsColor:  linear-gradient(to right, #7f7fd5, #7ca2ea, #7f7fd5);
+
+
+
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--mainTextColor);
+  background-color: #0f152e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
