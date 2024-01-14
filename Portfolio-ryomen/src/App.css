@@ -3,7 +3,7 @@
 /* Nav  */
 
 .Main-container{
-  padding: 0 25px;
+  padding: 0 10px 0;
   color: #fff;
   
 }
@@ -30,11 +30,13 @@
   font-weight: 500;
 }
 
-.header-nav-container ul li{
-  cursor: pointer;
+.header-nav-container ul a{
+  font-size: 1rem;
+  color: inherit;
   padding: 0 10px;
+  text-decoration: none;
 }
-.header-nav-container ul li:hover{
+.header-nav-container ul a:hover{
   padding: 0 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
@@ -45,7 +47,7 @@
 
 .data-presentation-container{
     margin: auto;
-    padding: 8rem 0 5rem;
+    padding: 8rem 1rem 5rem;
     text-align: left;
 }
 
@@ -101,6 +103,7 @@
   background: rgba(128,128,128,.1);
   border: 1px solid #fff;
   display: flex;
+  gap: .5rem;
   align-items: center;
  
 }
@@ -112,8 +115,9 @@
 
 .content-projects-container{
   margin: auto;
-  padding: 0 0 5rem;
+  padding: 0 1rem 5rem;
   text-align: left;
+  
 }
 
 .projects-title{
@@ -154,10 +158,40 @@
 }
 
 
+/* project footer */
 
+.footer-container{
+  font-size: .9rem;
+  margin: auto;
+  margin: 1rem auto 1.5rem;
+ 
+}
 
+.footer-container div{
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.footer-container span{
+  color: chocolate;
+}
+.footer-container div ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+}
 @media (min-width: 1024px) {
   section{
     width: 740px;
   }
+  .footer-container{
+    width: 1200px;
+  }
+  
+  
+
 }

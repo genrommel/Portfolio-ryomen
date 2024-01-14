@@ -1,5 +1,5 @@
 import './App.css';
-import { LinkedinIcon } from './svgs';
+import { LinkedinIcon, GithubIcon, MailIcon } from './svgs';
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -8,15 +8,15 @@ function App() {
       <header className='header-nav-container'>
         <nav>
           <ul>
-            <li className='navigation-ul-item'>Experiencia</li>
-            <li className='navigation-ul-item'>Proyectos</li>
-            <li className='navigation-ul-item'>Sobre mí</li>
-            <li className='navigation-ul-item'>Contacto</li>
+            <li className='navigation-ul-item'><a href="#">Experiencia</a></li>
+            <li className='navigation-ul-item'><a href="#projects">Projectos</a></li>
+            <li className='navigation-ul-item'><a href="#">Sobre mí</a></li>
+            <li className='navigation-ul-item'><a href="#">Contacto</a></li>
           </ul>
         </nav>
       </header>
 
-      <section className='data-presentation-container'>
+      <section className='data-presentation-container' id='presentation'>
         <h1 className='data-name-container'>
           Desarrollador Frontend
           <a href="">Disponible para trabajar</a>
@@ -28,13 +28,13 @@ function App() {
         </h2>
         <nav className='data-contact-container'>
           <a href=""> <LinkedinIcon color='grey' sizeSquare={'2rem'} /> Linkedin</a>
-          <a href="">GitHub</a>
-          <a href="">rommel.cc.lo@gmail.com</a>
+          <a href=""> <GithubIcon color='grey' sizeSquare={'2rem'}/> GitHub</a>
+          <a href=""> <MailIcon color='grey' sizeSquare={'2rem'}/> rommel.cc.lo@gmail.com</a>
         </nav>
       </section>
 
 
-      <section className='content-projects-container'>
+      <section className='content-projects-container' id='projects'>
         <h2 className='projects-title'> Svg Proyectos</h2>
         <article className='project-container'>
           <h3>Playground html css js</h3>
@@ -48,11 +48,11 @@ function App() {
         </article>
       </section>
 
-      <footer>
+      <footer className='footer-container'>
         <div>
-          <span></span>
+          <span>@2024 Todos los derechos blabla</span>
           <ul>
-            <li>Sobre mi</li>
+            <li>Sobre mí</li>
             <li>Contacto  </li>
           </ul>
         </div>

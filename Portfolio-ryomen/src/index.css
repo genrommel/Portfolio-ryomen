@@ -4,7 +4,7 @@
 
 
 
-  font-family: monospace, sans-serif;
+  font-family: Verdana, monospace, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: var(--mainTextColor);
@@ -24,8 +24,15 @@
   box-sizing: border-box;
 }
 
+
+html{
+  scroll-behavior: smooth;
+}
+
+
 body {
   width: 100%;
+  height: auto;
   background: radial-gradient(
     circle closest-corner at center 125px,
     #212132,
@@ -35,5 +42,5 @@ body {
 }
 
 a{
-  font-family: monospace;
+  font-family: Verdana, sans-serif;
 }
