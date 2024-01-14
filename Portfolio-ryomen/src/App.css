@@ -10,6 +10,8 @@
 .header-nav-container{
   width: 100%;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
 }
 .header-nav-container nav{
   max-width: 450px;
@@ -18,6 +20,7 @@
   padding: 8px 15px;
   border-radius: 35px;
   transition: .3s ease;
+
 }
 .header-nav-container ul{
   list-style: none;
@@ -40,13 +43,116 @@
 
 /* Presentation section */
 
+.data-presentation-container{
+    margin: auto;
+    padding: 8rem 0 5rem;
+    text-align: left;
+}
 
-section{
-  margin: auto;
+.data-name-container{
+  font-size: 2.4rem;
+  padding: 0 0 1rem;
+}
+
+.data-name-container a{
+  font-size: 11px;
+  margin-left: 1rem;
+  background: rgb(149, 0, 255);
+  padding: 2px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: white;
+}
+
+.data-name-container a:focus{
+  opacity: .7;
+}
+
+.data-information-container{
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.data-job{
+  color: rgb(242, 255, 0);
+}
+.data-personal{
+  color: aliceblue;
+}
+.data-specialization{
+  color: rgb(166, 94, 172);
+}
+
+.data-contact-container{
+  padding: 1.3rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.data-contact-container a{
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+  padding: 4px 13px;
+  border-radius: 20px;
+  background: rgba(128,128,128,.1);
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+ 
 }
 
 
+
+
 /* Projects section */
+
+.content-projects-container{
+  margin: auto;
+  padding: 0 0 5rem;
+  text-align: left;
+}
+
+.projects-title{
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: .5rem 0;
+}
+
+
+.project-container h3{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: rgb(200, 0, 255);
+}
+.project-container p{
+  font-size: 1rem;
+  margin: 1rem 0; 
+  word-wrap: break-word;
+}
+.project-container ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+.project-container ul li{
+  padding: 3px 7px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: .8rem;
+  background-color: black;
+}
+.project-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
 
 
 

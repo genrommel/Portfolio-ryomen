@@ -1,4 +1,5 @@
 import './App.css';
+import { LinkedinIcon } from './svgs';
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -16,26 +17,26 @@ function App() {
       </header>
 
       <section className='data-presentation-container'>
-        <img src="" alt="" />
-        <h1>
+        <h1 className='data-name-container'>
           Desarrollador Frontend
           <a href="">Disponible para trabajar</a>
         </h1>
-        <h2>
-          Desarrollador Web. Autodidacta y apasionado por la web.
-          Especializado en el desarrollo Frontend
+        <h2 className='data-information-container'>
+          <span className='data-job'>Desarrollador Web. </span>
+          <span className='data-personal'>Autodidacta y apasionado por la web. </span>
+          <span className='data-specialization'>Especializado en el desarrollo Frontend.</span>
         </h2>
-        <nav>
-          <a href="">Linkedin</a>
+        <nav className='data-contact-container'>
+          <a href=""> <LinkedinIcon color='grey' sizeSquare={'2rem'} /> Linkedin</a>
           <a href="">GitHub</a>
           <a href="">rommel.cc.lo@gmail.com</a>
         </nav>
       </section>
 
 
-      <section>
-        <h2> Svg Proyectos</h2>
-        <article>
+      <section className='content-projects-container'>
+        <h2 className='projects-title'> Svg Proyectos</h2>
+        <article className='project-container'>
           <h3>Playground html css js</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae eum minus sit expedita sint iure quidem id facere ut magnam praesentium, aperiam, ab vel. Vitae aspernatur cum enim voluptatem.</p>
           <ul>
@@ -47,7 +48,6 @@ function App() {
         </article>
       </section>
 
-
       <footer>
         <div>
           <span></span>
@@ -56,6 +56,8 @@ function App() {
             <li>Contacto  </li>
           </ul>
         </div>
+
+
       </footer>
     </div>
   )
