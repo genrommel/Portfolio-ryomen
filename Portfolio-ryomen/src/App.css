@@ -1,56 +1,57 @@
-#root {
-  font-family: monospace;
-  width: 90%;
+
+
+/* Nav  */
+
+.Main-container{
+  padding: 0 25px;
+  color: #fff;
+  
+}
+.header-nav-container{
+  width: 100%;
+  padding: 1rem 0;
+}
+.header-nav-container nav{
+  max-width: 450px;
   margin: 0 auto;
+  background-color: rgb(10, 10, 19);
+  padding: 8px 15px;
+  border-radius: 35px;
+  transition: .3s ease;
 }
-
-
-.header-main-container{
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  height: 100px;
-  justify-content: sc;
-  align-items: center;
-  padding-top: 30px;
-}
-
-
-
-.header-logo-container{
-  margin-left: 10vw;
-}
-
-.header-navbar-container ul{
-  height: 100%;
+.header-nav-container ul{
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 15vw;
-  list-style: none;
-  display: flex;
+  font-weight: 500;
 }
 
-.header-navbar-container ul a{
-  text-decoration: none;
-  color: var(--mainTextColor);
-  font-size: 1rem;
-  margin-right: 30px;
-  transition: .3s ease;
+.header-nav-container ul li{
+  cursor: pointer;
+  padding: 0 10px;
+}
+.header-nav-container ul li:hover{
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
 
 }
 
-.header-navbar-container ul a:hover{
-  color: skyblue;
+/* Presentation section */
+
+
+section{
+  margin: auto;
 }
 
 
-.header-navbar-container .nav-item-button{
-  padding: 10px 25px;
-  background: var(--buttonsColor);
-  border-radius: 6px;
-  
-}
+/* Projects section */
 
-.presentation-container{
-  height: calc(100vh - 100px);
+
+
+@media (min-width: 1024px) {
+  section{
+    width: 740px;
+  }
 }
